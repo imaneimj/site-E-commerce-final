@@ -76,11 +76,11 @@
           <div class="accordion-item mb-4 pb-3" style="background-color:#f3eae3">
             <h5 class="accordion-header" id="accordion-heading-1">
             <button class="accordion-button p-2 border-2 fs-5 text-uppercase" type="button" data-bs-toggle="collapse"
-    data-bs-target="#accordion-filter-2" aria-expanded="true" aria-controls="accordion-filter-2" 
-    style="background-color:#c8a78e; color: white; width: 100%; border: 2px solid white;"
-    onmouseover="this.style.backgroundColor='#754c29';" 
-    onmouseout="this.style.backgroundColor='#c8a78e';">
-    Color
+                data-bs-target="#accordion-filter-2" aria-expanded="true" aria-controls="accordion-filter-2" 
+                style="background-color:#c8a78e; color: white; width: 100%; border: 2px solid white;"
+                onmouseover="this.style.backgroundColor='#754c29';" 
+                onmouseout="this.style.backgroundColor='#c8a78e';">
+                Color
                 <svg class="accordion-button__icon type2" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
                   <g aria-hidden="true" stroke="none" fill-rule="evenodd">
                     <path
@@ -89,34 +89,22 @@
                 </svg>
               </button>
             </h5>
-          <!-- Filter de couleur -->
-<div id="accordion-filter-2" class="accordion-collapse collapse show border-0"
-     aria-labelledby="accordion-heading-1" data-bs-parent="#color-filters" style="background-color:#f3eae3">
-    <div class="accordion-body px-0 pb-0">
-        <div class="d-flex flex-wrap">
-            <!-- Lien pour couleur rouge -->
-            <a href="{{ url('shop?color=selver&categories=' . request('categories') . '&min=' . request('min') . '&max=' . request('max') . '&order=' . request('order')) }}" class="swatch-color js-filter" style="background-color: rgb(174, 174, 174);"></a>
-            
-            <!-- Lien pour couleur jaune -->
-            <a href="{{ url('shop?color=gold&categories=' . request('categories') . '&min=' . request('min') . '&max=' . request('max') . '&order=' . request('order')) }}" class="swatch-color js-filter" style="background-color: rgb(225, 178, 47);"></a>
-            
-            <!-- Lien pour couleur rose -->
-            <a href="{{ url('shop?color=goldenrose&categories=' . request('categories') . '&min=' . request('min') . '&max=' . request('max') . '&order=' . request('order')) }}" class="swatch-color js-filter" style="background-color: rgb(223, 173, 159);"></a>
-            
-            <!-- Ajoute d'autres couleurs ici selon tes besoins -->
-        </div>
-    </div>
-</div>
+        <div id="accordion-filter-2" class="accordion-collapse collapse show border-0"
+          aria-labelledby="accordion-heading-1" data-bs-parent="#color-filters" style="background-color:#f3eae3">
+          <div class="accordion-body px-0 pb-0">
+              <div class="d-flex flex-wrap">
+                  <a href="{{ url('shop?color=selver&categories=' . request('categories') . '&min=' . request('min') . '&max=' . request('max') . '&order=' . request('order')) }}" class="swatch-color js-filter" style="background-color: rgb(174, 174, 174);"></a>
+                  
+              <a href="{{ url('shop?color=gold&categories=' . request('categories') . '&min=' . request('min') . '&max=' . request('max') . '&order=' . request('order')) }}" class="swatch-color js-filter" style="background-color: rgb(225, 178, 47);"></a>
+              
+              <a href="{{ url('shop?color=goldenrose&categories=' . request('categories') . '&min=' . request('min') . '&max=' . request('max') . '&order=' . request('order')) }}" class="swatch-color js-filter" style="background-color: rgb(223, 173, 159);"></a>
+              
+          </div>
+      </div>
+  </div>
 
           </div>
         </div>
-
-
-        
-
-
-        
-
 
         <div class="accordion" id="price-filters">
           <div class="accordion-item mb-4"  style="background-color:#f3eae3">

@@ -34,7 +34,25 @@
                         <input type="text" name="landmark" class="form-control" value="{{ old('landmark', $address->landmark) }}">
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    <div class="form-group">
+    <label for="zip">ZIP Code</label>
+    <input type="text" name="zip" class="form-control" value="{{ old('zip', $address->zip) }}" required>
+</div>
+<div class="form-group">
+    <label for="state">State</label>
+    <input type="text" name="state" class="form-control" value="{{ old('state', $address->state) }}" required>
+</div>
+<div class="form-group">
+    <label for="city">City</label>
+    <input type="text" name="city" class="form-control" value="{{ old('city', $address->city) }}" required>
+</div>
+<div class="form-group">
+    <label for="isdefault">
+        <input type="checkbox" name="isdefault" {{ $address->isdefault ? 'checked' : '' }}>
+        Set as default
+    </label>
+</div>
+   <button type="submit" class="btn btn-success">Save Changes</button>
                     </div>
                 </form>
             </div>

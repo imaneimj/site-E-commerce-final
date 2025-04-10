@@ -261,7 +261,7 @@
 </div>
 @endsection
 @push('scripts')
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts">
+        <script>
         (function ($) {
 
             var tfLineChart = (function () {
@@ -287,7 +287,7 @@
                             type: 'bar',
                             height: 325,
                             toolbar: {
-                                show: false,
+                                show: true,
                             },
                         },
                         plotOptions: {
@@ -316,7 +316,7 @@
                             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                         },
                         yaxis: {
-                            show: false,
+                            show: true,
                         },
                         fill: {
                             opacity: 1
@@ -339,7 +339,6 @@
                     }
                 };
 
-                /* Function ============ */
                 return {
                     init: function () { },
 
@@ -350,11 +349,8 @@
                 };
             })();
 
-            jQuery(document).ready(function () { });
+            jQuery(document).ready(function () { tfLineChart.load();});
 
-            jQuery(window).on("load", function () {
-                tfLineChart.load();
-            });
 
             jQuery(window).on("resize", function () { });
         })(jQuery);

@@ -7,7 +7,10 @@
         font-size: 21px !important;
     }
 </style>
+
 <main class="pt-90">
+
+
     <div class="mb-4 pb-4"></div>
     <section class="shop-checkout container">
         <h2 class="page-title">Shipping and Checkout</h2>
@@ -202,18 +205,15 @@
                         @endif
                         </div>
                         <div class="checkout__payment-methods">
-                            <div class="form-check">
-                                <input class="form-check-input form-check-input_fill" type="radio" name="mode" value="card">
-                                <label class="form-check-label" for="mode_1">
-                                    Debit or Credit Card                                    
-                                </label>
-                            </div> 
+                           
                             <div class="form-check">
                                 <input class="form-check-input form-check-input_fill" type="radio" name="mode" value="paypal">
                                 <label class="form-check-label" for="mode_4">
                                     Paypal                                    
                                 </label>
                             </div>
+                            
+
                             <div class="form-check">
                                 <input class="form-check-input form-check-input_fill" type="radio" name="mode" value="cod" checked>
                                 <label class="form-check-label" for="mode_3">

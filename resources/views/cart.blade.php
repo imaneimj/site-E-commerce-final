@@ -106,7 +106,6 @@
                     </tbody>
                 </table>
                 <div class="cart-table-footer">
-                    <input class="form-control" type="text" name="coupon_code" placeholder="Coupon Code">
                             <input class="btn-link fw-medium position-absolute top-0 end-0 h-100 px-4" type="submit" value="APPLY COUPON">                                                        
                             <form class="position-relative bg-body" method="POST" action="{{route('cart.empty')}}">
                                 @csrf

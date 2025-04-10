@@ -30,8 +30,7 @@ class AdminController extends Controller
                                     SUM(IF(status = 'delivered', 1, 0)) AS TotalDelivered,
                                     SUM(IF(status = 'canceled', 1, 0)) AS TotalCanceled
                                 FROM 
-                                    Orders;
-                            ");
+                                    Orders");
             $monthlyDatas=DB::select("SELECT 
                             M.id AS MonthNo,
                             M.name AS MonthName,
@@ -201,7 +200,6 @@ class AdminController extends Controller
                 'images.*' => 'nullable|mimes:jpg,png,jpeg|max:2048' 
             ]);
         
-            // Update product details
             $product->name = $request->name;
             $product->slug = Str::slug($request->name);
             $product->short_description = $request->short_description;
@@ -215,7 +213,6 @@ class AdminController extends Controller
             
             $current_timestamp = Carbon::now()->timestamp;
         
-            // Handle Main Image Upload
             if ($request->hasFile('image')) {        
                 if ($product->image && file_exists(public_path('uploads/'.$product->image))) {
                     unlink(public_path('uploads/'.$product->image)); // Delete old image
@@ -360,7 +357,7 @@ class AdminController extends Controller
           $order = Order::find($order_id);
           $orderItems = OrderItem::where('order_id',$order_id)->orderBy('id')->paginate(12);
           $transaction = Transaction::where('order_id',$order_id)->first();
-          return view("admin.order-details",compact('order','orderitems','transaction'));
+          return view("admin.order-details",compact('order','orderItems','transaction'));
     }
 
     public function update_order_status(Request $request){        

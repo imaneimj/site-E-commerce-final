@@ -419,15 +419,14 @@
                 padding: 0 20px; 
             }
             #box-content-search {
-  max-height: 300px; /* Ajuste la hauteur selon tes besoins */
-  overflow-y: auto; /* Permet le défilement vertical */
+  max-height: 300px;
+  overflow-y: auto; 
   position: absolute;
   width: 100%;
   background: #fff;
   border: 1px solid #ddd;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; /* Coins arrondis */
-  padding: 10px;
+  border-radius: 8px; 
 }
 
 
