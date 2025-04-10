@@ -221,7 +221,7 @@
     <section id="contact">
       <hr>
         <h2>Contact Us</h2>
-        <p>Email: muse@gmail.com</p>
+        <a href="mailto:muse55855@gmail.com">Email: muse55855@gmail.com</a>
         <p>Phone: +212 534 567 890</p>
         <p>Address: 123 Future St, Cyber City, FC 45678</p>
     </section>
